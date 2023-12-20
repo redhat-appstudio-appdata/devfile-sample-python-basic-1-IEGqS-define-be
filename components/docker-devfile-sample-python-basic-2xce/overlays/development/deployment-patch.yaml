@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: docker-devfile-sample-python-basic-2xce
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/qwan1-tenant/devfile-sample-python-basic-1/docker-devfile-sample-python-basic-2xce@sha256:0e7564610ff070c42015e8a712f64ed378dfcf72daf08ebd861d8cc2b8883ba9
+        name: container-image
+        resources: {}
+status: {}
